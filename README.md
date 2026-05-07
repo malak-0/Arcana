@@ -21,6 +21,7 @@ It combines a Flutter mobile app with a FastAPI backend powered by vector databa
   ⚡ Fast and lightweight backend using FastAPI
   
 
+
 🏗️ System Architecture
 
   Flutter App
@@ -28,6 +29,7 @@ It combines a Flutter mobile app with a FastAPI backend powered by vector databa
        ↓
        
   FastAPI Backend
+  
        ↓
        
   PDF Processing (PyMuPDF)
@@ -47,6 +49,7 @@ It combines a Flutter mobile app with a FastAPI backend powered by vector databa
        ↓
        
   LLM (Gemini / Google Generative AI)
+
   
 
 🧠 How It Works
@@ -72,59 +75,85 @@ It combines a Flutter mobile app with a FastAPI backend powered by vector databa
 
   📱 Frontend
   
-  Flutter
-  Dart
-  HTTP package
+    Flutter
+    Dart
+    HTTP package
   
   ⚙️ Backend
   
-  FastAPI
-  Python
-  
+    FastAPI
+    Python
+    
   🤖 AI / ML
   
-  LangChain
-  Google Gemini API
-  HuggingFace Embeddings (bge-small-en-v1.5)
+    LangChain
+    Google Gemini API
+    HuggingFace Embeddings (bge-small-en-v1.5)
   
   🗄️ Vector DB
-  
-  ChromaDB
+    
+    ChromaDB
   
   📄 PDF Processing
   
-  PyMuPDF (fitz)
+    PyMuPDF (fitz)
   
   
 📁 Project Structure
 
   Arcana/
+  
   │
+  
   ├── Backend/
+  
   │   ├── main.py
+  
   │   ├── routes/
+  
   │   │   ├── upload.py
+  
   │   │   ├── chat.py
+  
   │   │   ├── summary.py
+  
   │   ├── rag/
+  
   │       ├── extract_text.py
+  
   │       ├── chunk_text.py
+  
   │       ├── embeddings.py
+  
   │       ├── vector_db.py
+  
   │       ├── retriever.py
+  
   │       ├── llm.py
+  
   │
   ├── frontend/ (Flutter App)
+
+  
   │   ├── lib/
+  
   │       ├── screens/
+  
   │       ├── widgets/
+  
   │
   ├── storage/ (ignored in git)
+  
   │   ├── papers/
+  
   │   ├── chroma_db/
+  
   │
   ├── .gitignore
+  
   ├── README.md
+
+  
   
 ⚙️ Setup Instructions
 
